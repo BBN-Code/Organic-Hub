@@ -709,11 +709,27 @@ section{
 }
 
 
+
 @media (max-width: 450px) {
   html {
-    font-size: 50%;
+    font-size: 62.5%;
   }
-
+.header{
+  position: relative;
+}
+#head_about{
+  margin-bottom: -5rem;
+}
+.container{
+ margin-right: 2.5rem;  
+}
+.about .main-box{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.review{
+  width: fit-content;
+}
   .home .content h3 {
     font-size: 3.5rem;
   }
@@ -733,10 +749,47 @@ section{
 
 @media (max-width: 350px) {
   html {
-    font-size: 50%;
+    font-size: 62.5%; 
   }
 
   .home .content h3 {
-    font-size: 3.5rem;
+    font-size: 2rem;
+  }
+
+  #menu-btn {
+    display: inline-block;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 100%;
+    right: 0; /* Adjusted for better positioning */
+    width: 100%;
+    border-radius: 0.5rem;
+    background-color: #00b600; /* Added a background color */
+  }
+
+  .header .navbar.active{
+    right: 1rem;
+    height: 100%;
+    transition: 0.4s linear;
+  }
+
+  .header .navbar a{
+    font-size: 1.6rem; 
+    display: block;
+    padding: 1rem;
+    color: white;
+    text-align: center; 
+    text-decoration: none; 
+  }
+
+  .header .navbar a:hover {
+    background: #38ed38;
+  }
+
+  .header {
+    
   }
 }
+
