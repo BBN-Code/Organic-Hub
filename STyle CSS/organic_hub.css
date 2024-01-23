@@ -718,75 +718,16 @@ section{
 }
 
 
+
 @media (max-width: 600px) {
   html {
-    font-size: 50%;
-  }
-  .home{
-    width: 100%;
-    height: 100vh;
+    font-size: 62.5%;
   }
 
-  .content{
-    width: 100%;
-  }
-  .content h2{
-    margin-top: -30%;
-    font-size: 12vw;
-    font-weight: 900;
-    line-height: 18vw;  
-  }
-  .content a{
-    margin-top: 6rem;
-    padding: 4vw 8vw;
-    font-size: 2.5rem;
-    font-weight: 600;
-    border-radius: 8px;
-  }
-  .container{
-    margin-right: 10vw;
-  }
-  .container .banner{
-    margin: -5vw -5vw;
-  }
-  .product{
-    margin-bottom: -20%;
-  }
-  .product .box_content{
-    padding: 3rem;
-  }
-  .main-box{
-    margin-top: -10%;
-  }
-  .about{
-    padding-top: 20vw;
-    padding-bottom: 20vw;
-    width: 100%;
-    height: 90vh;
-  }
-  .about .main-box {
-    display: flex;
-    flex-direction: column;
-  }
-  .about .img-box img{
-    height: 60vw;
-
-  }
-  .about .img-box{
-   width: 80%;
-  }
-  #review{
-    padding-top: 20vw;
-    padding-bottom: 15vw;
-  }
-  .review{
-    width: 100%;
-    padding: 2vw 3vw ;
+  .home .content h3 {
+    font-size: 3.5rem;
   }
 
-  .contact{
-    padding-top: 8vw;
-  }
   .contact .row {
     margin-left: 4rem;
     margin-right: 4rem;
@@ -800,7 +741,11 @@ section{
 }
 
 
-@media (max-width: 450px) {
+@media (max-width: 350px) {
+  html {
+    font-size: 50%;
+  }
+
   .home .content h3 {
     font-size: 3.5rem;
   }
