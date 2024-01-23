@@ -11,14 +11,11 @@
     text-decoration: none;
 }
 
-html {
+html,body {
     font-size: 12px;
     overflow-x: hidden;
     scroll-behavior: smooth;
-  }
-  
-body {
-  background: linear-gradient(125deg, #d3f7a5, #93f071);
+    background: linear-gradient(125deg, #d3f7a5, #93f071);
   }
 
 /* header */
@@ -47,12 +44,13 @@ body {
 
 .header .navbar a{
   font-size: 1.7rem;
+  font-weight: 600;
   color: var(--black);
   margin: 0 1rem;
 }
 
 .header .navbar a:hover{
-  color: var(--primary-color);
+  color: #32cf0b;
 }
 
 .header .icons div{
@@ -236,7 +234,7 @@ body {
 /* banner section */
 
 section{
-  padding: 1.7rem;
+  padding: 1.7rem 5rem;
 }
 
 .container{
@@ -675,6 +673,9 @@ section{
   #menu-btn {
     display: inline-block;
   }
+  .header{
+    position: fixed;
+  }
 
   .header .navbar {
     position: absolute;
@@ -687,14 +688,22 @@ section{
 
   .header .navbar.active {
     right: 0rem;
-    height: 100%;
+    height: 100vh;
     transition: 0.4s linear;
+    background-color: #b1f7a0;
+
   }
 
   .header .navbar a {
+    width: 100%;
     font-size: 2rem;
+    font-weight: 600;
+    padding: 3rem 2rem;
     margin: 2rem 2.5rem;
     display: block;
+  }
+  .header .navbar a:hover{
+    color: #32cf0b;
   }
 
   #home{
@@ -709,15 +718,75 @@ section{
 }
 
 
-@media (max-width: 450px) {
+@media (max-width: 600px) {
   html {
     font-size: 50%;
   }
-
-  .home .content h3 {
-    font-size: 3.5rem;
+  .home{
+    width: 100%;
+    height: 100vh;
   }
 
+  .content{
+    width: 100%;
+  }
+  .content h2{
+    margin-top: -30%;
+    font-size: 12vw;
+    font-weight: 900;
+    line-height: 18vw;  
+  }
+  .content a{
+    margin-top: 6rem;
+    padding: 4vw 8vw;
+    font-size: 2.5rem;
+    font-weight: 600;
+    border-radius: 8px;
+  }
+  .container{
+    margin-right: 10vw;
+  }
+  .container .banner{
+    margin: -5vw -5vw;
+  }
+  .product{
+    margin-bottom: -20%;
+  }
+  .product .box_content{
+    padding: 3rem;
+  }
+  .main-box{
+    margin-top: -10%;
+  }
+  .about{
+    padding-top: 20vw;
+    padding-bottom: 20vw;
+    width: 100%;
+    height: 90vh;
+  }
+  .about .main-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .about .img-box img{
+    height: 60vw;
+
+  }
+  .about .img-box{
+   width: 80%;
+  }
+  #review{
+    padding-top: 20vw;
+    padding-bottom: 15vw;
+  }
+  .review{
+    width: 100%;
+    padding: 2vw 3vw ;
+  }
+
+  .contact{
+    padding-top: 8vw;
+  }
   .contact .row {
     margin-left: 4rem;
     margin-right: 4rem;
@@ -731,11 +800,7 @@ section{
 }
 
 
-@media (max-width: 350px) {
-  html {
-    font-size: 50%;
-  }
-
+@media (max-width: 450px) {
   .home .content h3 {
     font-size: 3.5rem;
   }
